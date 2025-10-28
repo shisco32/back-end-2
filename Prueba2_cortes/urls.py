@@ -1,5 +1,5 @@
 """
-URL configuration for francisco__cortes project.
+URL configuration for Prueba2_cortes project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/5.2/topics/http/urls/
@@ -16,7 +16,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-
+from sistema_alumno import views
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', views.lista_alumnos, name='lista_alumnos'),
+    path('crear/', views.crear_alumno, name='crear_alumno'),
+    path('editar/<int:id>/', views.editar_alumno, name='editar_alumno'),
+    path('eliminar/<int:id>/', views.eliminar_alumno, name='eliminar_alumno'),
 ]

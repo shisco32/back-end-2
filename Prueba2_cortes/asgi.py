@@ -1,5 +1,5 @@
 """
-ASGI config for francisco__cortes project.
+ASGI config for Prueba2_cortes project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.asgi import get_asgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'francisco__cortes.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'Prueba2_cortes.settings')
 
 application = get_asgi_application()
